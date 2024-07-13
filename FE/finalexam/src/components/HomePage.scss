@@ -1,0 +1,111 @@
+.HomePage {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #FFE36D, #FFB24C);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .home__container {
+        transform: scale(0.85);
+        max-width: 1200px;
+        color: black;
+        background-color: rgba(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .container__header {
+            margin-top: 10px;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header__icon {
+                font-size: 16px;
+            }
+
+            .header__logo {
+                font-size: 14px;
+                font-weight: 600;
+
+                .logo {
+                    margin-left: 4px;
+                    color: white;
+                    background-color: #F16018;
+                    padding: 5px 8px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .line {
+            width: 100%;
+            border: 1px #e2e2e2 solid;
+        }
+
+        .container__carousel {
+            margin-top: 10px;
+            padding: 24px;
+
+            .Carousel__item {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .detail__container {
+
+        transform: scale(0.85);
+        max-width: 800px;
+        color: black;
+        background-color: rgba(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        min-height: 500px;
+
+        .movie__detail {
+            position: relative;
+
+            padding: 24px;
+
+            .img__detail {
+                position: absolute;
+                display: flex;
+                top: -80px;
+                left: -130px;
+
+                img {
+                    border-radius: 10px;
+
+                }
+            }
+
+            .button__detail {
+                color: white;
+                background-color: #EB7B24;
+                padding: 18px;
+                border-radius: 20px;
+            }
+
+            .heading__detail {
+                font-size: 35px;
+                font-weight: 400;
+            }
+
+            .X {
+                position: absolute;
+                display: flex;
+                top: 30px;
+                right: 30px;
+                cursor: pointer;
+                font-size: 15px;
+                width: 10px;
+                height: 10px;
+                z-index: 10000;
+            }
+        }
+    }
+}
